@@ -1,5 +1,5 @@
 {% set name = "kconfigwidgets" %}
-{% set version = "5.71.0" %}
+{% set version = "5.72.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kconfigwidgets-{{ version }}.tar.xz
-  sha256: 5778523c49a5294e9376ce8ee6db1a51ffaa506418a19e8632f73287a596276f
+  sha256: 1ccbb1d87b403e75e9ee9980eb27c2e24aab26f99b1335e415226f1cb7f6f61d
 
 build:
   number: 0
