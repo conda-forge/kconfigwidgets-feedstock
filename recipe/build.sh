@@ -11,6 +11,6 @@ cmake -DCMAKE_INSTALL_PREFIX=$PREFIX \
       ..
 
 make -j ${CPU_COUNT}
-ctest -E "kstandardactiontest|kconfigdialog_unittest|kcolorschemetest|krecentfilesaction_test"
+ctest -E "kstandardactiontest|kconfigdialog_unittest|kcolorschemetest|krecentfilesaction_test|klanguagenametest"
 make install
 popd
