@@ -1,5 +1,5 @@
 {% set name = "kconfigwidgets" %}
-{% set version = "5.73.0" %}
+{% set version = "5.74.0" %}
 {% set major_minor = ".".join(version.split(".")[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.kde.org/stable/frameworks/{{ major_minor }}/kconfigwidgets-{{ version }}.tar.xz
-  sha256: ed8a0a8158f895aebd46c4a725f77178d942cd9476a864a615a9df343da51f8e
+  sha256: e14b5b409c7b242796ca7119cb9d41b11728222b79e00bdcc62822d991120dd4
 
 build:
   number: 0
@@ -46,9 +46,16 @@ test:
 
 about:
   home: https://api.kde.org/frameworks/kconfigwidgets/html/index.html
-  license: GPL-v2
-  license_family: GPL
-  license_file: COPYING
+  license: BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.0-only AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-3.0-only AND LicenseRef-KDE-Accepted-LGPL AND MIT
+  license_file:
+    - LICENSES/BSD-3-Clause.txt
+    - LICENSES/GPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.0-only.txt
+    - LICENSES/LGPL-2.0-or-later.txt
+    - LICENSES/LGPL-2.1-only.txt
+    - LICENSES/LGPL-3.0-only.txt
+    - LICENSES/LicenseRef-KDE-Accepted-LGPL.txt
+    - LICENSES/MIT.txt
   summary: Widgets for configuration dialogs
   description: |
     KConfigWidgets provides easy-to-use classes to create configuration dialogs,
